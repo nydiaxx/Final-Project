@@ -19,7 +19,7 @@ emailMessage = "THIS MESSAGE WAS SENT USING PYTHON"
 msg = MIMEText(emailMessage, 'html')
 msg['Subject'] = emailSubject
 msg['From'] = sender
-msg['To'] = ",".join(reciever)  # you can reomove ", ".join()
+msg['To'] = ",".join(reciever)
 
 # # Connect Gmail SMTP Server
 s = smtplib.SMTP_SSL(host='smtp.gmail.com', port=465)
